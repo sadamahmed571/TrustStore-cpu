@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الماكينات - مجموعة الثقة التجارية</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	 <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products-board.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+
+
+    <!-- Page Header -->
+    <div class="container page-header">
+        <div>
+            <h1 class="page-title">
+                <i class="fas fa-cogs"></i>
+                الماكينات
+            </h1>
+            <p class="page-subtitle">اكتشف مجموعة واسعة من الماكينات الصناعية المتطورة لتلبية احتياجات مشروعك</p>
+        </div>
+        <button class="back-to-home" onclick="window.location.href='index.html'">
+            <i class="fas fa-arrow-right"></i>
+            العودة للرئيسية
+        </button>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="container filter-section">
+        <div class="filter-header">
+            <h2 class="filter-title">تصفية النتائج</h2>
+            <button class="filter-reset">
+                <i class="fas fa-redo"></i>
+                إعادة تعيين
+            </button>
+        </div>
+        
+        <div class="filter-grid">
+            <div class="filter-group">
+                <label class="filter-label">الفئة</label>
+                <select class="filter-select">
+                    <option value="">جميع الفئات</option>
+                    <option value="heavy">الماكينات الثقيلة</option>
+                    <option value="light">الماكينات الخفيفة</option>
+                    <option value="cnc">ماكينات CNC</option>
+                    <option value="welding">ماكينات اللحام</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label class="filter-label">السعر</label>
+                <select class="filter-select">
+                    <option value="">جميع الأسعار</option>
+                    <option value="0-10000">حتى 10,000$</option>
+                    <option value="10000-50000">10,000$ - 50,000$</option>
+                    <option value="50000-100000">50,000$ - 100,000$</option>
+                    <option value="100000+">أكثر من 100,000$</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label class="filter-label">البلد المصنع</label>
+                <select class="filter-select">
+                    <option value="">جميع البلدان</option>
+                    <option value="germany">ألمانيا</option>
+                    <option value="japan">اليابان</option>
+                    <option value="turkey">تركيا</option>
+                    <option value="china">الصين</option>
+                    <option value="usa">الولايات المتحدة</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label class="filter-label">الحالة</label>
+                <select class="filter-select">
+                    <option value="">جميع الحالات</option>
+                    <option value="new">جديد</option>
+                    <option value="used">مستعمل</option>
+                    <option value="refurbished">مجدّد</option>
+                </select>
+            </div>
+        </div>
+        
+        <button class="filter-apply">تطبيق الفلتر</button>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container products-section">
+        <div class="products-header">
+            <div class="products-count">عرض 1-12 من 48 منتج</div>
+            <div class="sort-options">
+                <span class="sort-label">ترتيب حسب:</span>
+                <select class="sort-select">
+                    <option value="popular">الأكثر شيوعاً</option>
+                    <option value="newest">الأحدث</option>
+                    <option value="price-low">السعر: من الأقل للأعلى</option>
+                    <option value="price-high">السعر: من الأعلى للأقل</option>
+                    <option value="rating">التقييمات</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="p-img-container">
+                    <img src="img/machine1.jpg" alt="ماكينة خراطة">
+                </div>
+                <h3 class="p-title">ماكينة خراطة CNC متعددة المحاور - دقة عالية</h3>
+                <div class="p-price">$45,000 - $55,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">ضمان 3 سنوات</div>
+                <div class="p-actions">
+                    <button class="p-details-btn" onclick="window.location.href='single-cpu-product.html'">تفاصيل المنتج</button>
+                    <button class="p-fav-btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="p-img-container">
+                    <img src="img/machine2.jpg" alt="مخرطة">
+                </div>
+                <h3 class="p-title">مخرطة معدنية أوتوماتيكية - سعة 1500 ملم</h3>
+                <div class="p-price">$28,500 - $35,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">صناعة ألمانية</div>
+                <div class="p-actions">
+                    <button class="p-details-btn" onclick="window.location.href='single-cpu-product.html'">تفاصيل المنتج</button>
+                    <button class="p-fav-btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="p-img-container">
+                    <img src="img/machine3.jpg" alt="ماكينة قطع بالبلازما">
+                </div>
+                <h3 class="p-title">ماكينة قطع بالبلازما - سمك حتى 50 ملم</h3>
+                <div class="p-price">$15,000 - $22,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">توفير طاقة 40%</div>
+                <div class="p-actions">
+                    <button class="p-details-btn" onclick="window.location.href='single-cpu-product.html'">تفاصيل المنتج</button>
+                    <button class="p-fav-btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="p-img-container">
+                    <img src="img/machine4.jpg" alt="مثقاب">
+                </div>
+                <h3 class="p-title">مثقاب عمودي صناعي - محرك 7.5 حصان</h3>
+                <div class="p-price">$8,500 - $12,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">سرعة متغيرة</div>
+                <div class="p-actions">
+                    <button class="p-details-btn" onclick="window.location.href='single-cpu-product.html'">تفاصيل المنتج</button>
+                    <button class="p-fav-btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="p-img-container">
+                    <img src="img/machine5.jpg" alt="ماكينة لحام">
+                </div>
+                <h3 class="p-title">ماكينة لحام MIG/MAG - 500 أمبير صناعي</h3>
+                <div class="p-price">$4,200 - $6,500</div>
+                <div class="p-moq">أقل طلب: 2 قطعة</div>
+                <div class="p-badge">كفاءة عالية</div>
+                <div class="p-actions">
+                    <button class="p-details-btn" onclick="window.location.href='single-cpu-product.html'">تفاصيل المنتج</button>
+                    <button class="p-fav-btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="p-img-container">
+                    <img src="img/machine6.jpg" alt="ماكينة ثني">
+                </div>
+                <h3 class="p-title">ماكينة ثني الصفائح الهيدروليكية - 200 طن</h3>
+                <div class="p-price">$32,000 - $40,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">نظام CNC</div>
+                <div class="p-actions">
+                    <button class="p-details-btn" onclick="window.location.href='single-cpu-product.html'">تفاصيل المنتج</button>
+                    <button class="p-fav-btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="p-img-container">
+                    <img src="img/machine7.jpg" alt="ماكينة قص">
+                </div>
+                <h3 class="p-title">ماكينة قص هيدروليكية - طول 4 متر</h3>
+                <div class="p-price">$25,000 - $32,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">دقة قص ±0.1 ملم</div>
+                <div class="p-actions">
+                    <button class="p-details-btn" onclick="window.location.href='single-cpu-product.html'">تفاصيل المنتج</button>
+                    <button class="p-fav-btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="p-img-container">
+                    <img src="img/machine8.jpg" alt="ماكينة طحن">
+                </div>
+                <h3 class="p-title">ماكينة طحن سطحية - طاولة 600x300 ملم</h3>
+                <div class="p-price">$18,500 - $24,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">دقة عالية</div>
+                <div class="p-actions">
+                    <button class="p-details-btn" onclick="window.location.href='single-cpu-product.html'">تفاصيل المنتج</button>
+                    <button class="p-fav-btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination-section">
+            <div class="pagination">
+                <div class="page-item disabled">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="page-item active">1</div>
+                <div class="page-item">2</div>
+                <div class="page-item">3</div>
+                <div class="page-item">4</div>
+                <div class="page-item">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container products-section">
+        <div class="sec-header">
+            <div>
+                <span class="sec-title sec-title-large">الماكينات الثقيلة (Heavy Machinery)</span>
+                <p class="sec-desc">قوة تحمل استثنائية وعمل متواصل في أقسى الظروف</p>
+            </div>
+            <a href="products-board.html" class="search-btn search-btn-view-all">عرض الكل</a>
+        </div>
+
+        <div class="products-grid">
+            <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="خلاطة">
+                </div>
+                <h3 class="p-title">خلاطة خرسانة مركزية 3م³/دورة - نظام PLC Siemens</h3>
+                <div class="p-price">$55,000 - $65,000</div>
+                <div class="p-moq">أقل طلب: 1 مجموعة</div>
+                <div class="p-badge">ضمان 5 سنوات</div>
+            </a>
+
+            <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="ضاغط">
+                </div>
+                <h3 class="p-title">ضاغط هواء حلزوني 75 حصان - تدفق 12 م³/دقيقة</h3>
+                <div class="p-price">$8,500 - $10,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">كفاءة IE3</div>
+            </a>
+
+            <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="لحام">
+                </div>
+                <h3 class="p-title">ماكينة لحام إنفرتر 500 أمبير - دورة عمل 80%</h3>
+                <div class="p-price">$450 - $600</div>
+                <div class="p-moq">أقل طلب: 5 قطع</div>
+                <div class="p-badge">صناعي Heavy-Duty</div>
+            </a>
+
+             <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="ونش">
+                </div>
+                <h3 class="p-title">رافعة شوكية ديزل 5 طن - محرك Isuzu ياباني</h3>
+                <div class="p-price">$18,000 - $22,000</div>
+                <div class="p-moq">أقل طلب: 1 قطعة</div>
+                <div class="p-badge">كابينة مكيفة</div>
+            </a>
+            
+            <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="مثقاب">
+                </div>
+                <h3 class="p-title">مثقاب صناعي عمودي - محرك 5 حصان سرعات متغيرة</h3>
+                <div class="p-price">$1,200 - $1,800</div>
+                <div class="p-moq">أقل طلب: 2 قطعة</div>
+                <div class="p-badge">دقة عالية</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="container products-section products-section-last">
+        <div class="sec-header">
+            <div>
+                <span class="sec-title sec-title-large">البناء الحديث</span>
+                <p class="sec-desc">حلول أتمتة كاملة لزيادة الإنتاجية وتقليل التكاليف</p>
+            </div>
+            <a href="products-board.html" class="search-btn search-btn-view-all">عرض الكل</a>
+        </div>
+
+        <div class="products-grid">
+            <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="بلوك">
+                </div>
+                <h3 class="p-title">خط إنتاج بلوك آلي 18,000 قطعة - هيدروليك Rexroth</h3>
+                <div class="p-price">$85,000 - $120,000</div>
+                <div class="p-moq">أقل طلب: 1 خط</div>
+                <div class="p-badge">ألماني/تركي</div>
+            </a>
+
+            <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="تعبئة">
+                </div>
+                <h3 class="p-title">خط تعبئة مواد غذائية 80 عبوة/دقيقة - ستانلس 316L</h3>
+                <div class="p-price">$35,000 - $50,000</div>
+                <div class="p-moq">أقل طلب: 1 خط</div>
+                <div class="p-badge">HACCP Certified</div>
+            </a>
+
+            <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="مونة">
+                </div>
+                <h3 class="p-title">مصنع مونة جافة 15 طن/ساعة - خلط أفقي Ribbon</h3>
+                <div class="p-price">$60,000 - $90,000</div>
+                <div class="p-moq">أقل طلب: 1 مشروع</div>
+                <div class="p-badge">تسليم مفتاح</div>
+            </a>
+
+            <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="سيور">
+                </div>
+                <h3 class="p-title">نظام سيور ناقلة صناعية - مطاط مقاوم للحرارة</h3>
+                <div class="p-price">$500 / متر</div>
+                <div class="p-moq">أقل طلب: 50 متر</div>
+                <div class="p-badge">تخصيص كامل</div>
+            </a>
+            
+             <a href="single-cpu-product.html" class="product-card">
+                <div class="p-img-container">
+                    <img src="img/1.jpg" alt="روبوت">
+                </div>
+                <h3 class="p-title">ذراع روبوتية للتكديس (Palletizer) - حمولة 200 كغ</h3>
+                <div class="p-price">$25,000 - $30,000</div>
+                <div class="p-moq">أقل طلب: 1 وحدة</div>
+                <div class="p-badge">AI Driven</div>
+            </a>
+        </div>
+    </div>
+    <!-- Request Form Modal -->
+    <div class="modal" id="request-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="form-title">طلب منتج أو خدمة</h2>
+            <form id="request-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">الاسم الكامل</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="product-type">نوع المنتج أو الخدمة</label>
+                    <select id="product-type" class="form-select" required>
+                        <option value="">اختر نوع المنتج أو الخدمة</option>
+                        <option value="machinery">الماكينات</option>
+                        <option value="production-lines">خطوط الإنتاج</option>
+                        <option value="modern-building">البناء الحديث</option>
+                        <option value="industrial-equipment">معدات صناعية</option>
+                        <option value="spare-parts">قطع الغيار</option>
+                        <option value="operating-supplies">مستلزمات التشغيل</option>
+                        <option value="technical-services">خدمات فنية</option>
+                        <option value="project-ideas">افكار مشاريع</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="details">تفاصيل الطلب</label>
+                    <textarea id="details" class="form-textarea" placeholder="يرجى وصف المنتج أو الخدمة المطلوبة بالتفصيل..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">إرسال الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+        const themeIcon = document.getElementById('theme-icon');
+        const themeIconMobile = document.getElementById('theme-icon-mobile');
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            
+            if (isDarkMode) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                themeIconMobile.classList.remove('fa-moon');
+                themeIconMobile.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                themeIconMobile.classList.remove('fa-sun');
+                themeIconMobile.classList.add('fa-moon');
+            }
+            
+            // Save preference to localStorage
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+        
+        themeToggle.addEventListener('click', toggleDarkMode);
+        themeToggleMobile.addEventListener('click', toggleDarkMode);
+        
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+            themeIconMobile.classList.remove('fa-moon');
+            themeIconMobile.classList.add('fa-sun');
+        }
+        
+        // Header Hide/Show on Scroll
+        const topHeader = document.getElementById('top-header');
+        const mainHeader = document.getElementById('main-header');
+        let lastScrollY = window.scrollY;
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scrolling down
+                topHeader.classList.add('top-header-hidden');
+                mainHeader.classList.add('header-visible');
+            } else {
+                // Scrolling up
+                if (window.scrollY <= 100) {
+                    topHeader.classList.remove('top-header-hidden');
+                    mainHeader.classList.remove('header-visible');
+                } else {
+                    topHeader.classList.remove('top-header-hidden');
+                    mainHeader.classList.add('header-visible');
+                }
+            }
+            lastScrollY = window.scrollY;
+        });
+        
+        // Request Form Modal
+        const requestModal = document.getElementById('request-modal');
+        const requestBtnTriggers = document.querySelectorAll('.request-btn-trigger');
+        const closeModal = document.querySelector('.close-modal');
+        const requestForm = document.getElementById('request-form');
+        
+        function openRequestModal() {
+            requestModal.style.display = 'flex';
+        }
+        
+        function closeRequestModal() {
+            requestModal.style.display = 'none';
+        }
+        
+        requestBtnTriggers.forEach(trigger => {
+            trigger.addEventListener('click', openRequestModal);
+        });
+        
+        closeModal.addEventListener('click', closeRequestModal);
+        
+        // Close modal when clicking outside of it
+        window.addEventListener('click', (e) => {
+            if (e.target === requestModal) {
+                closeRequestModal();
+            }
+        });
+        
+        // Form submission
+        requestForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('تم استلام طلبك بنجاح! سنتواصل معك قريباً.');
+            closeRequestModal();
+            requestForm.reset();
+        });
+        
+        // Simple search interaction
+        document.querySelector('.search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('جاري البحث في قاعدة بيانات المنتجات الصناعية...');
+        });
+        
+        // Filter reset functionality
+        document.querySelector('.filter-reset').addEventListener('click', function() {
+            const filterSelects = document.querySelectorAll('.filter-select');
+            filterSelects.forEach(select => {
+                select.selectedIndex = 0;
+            });
+        });
+        
+        // Favorite button toggle
+        const favButtons = document.querySelectorAll('.p-fav-btn');
+        favButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    this.style.color = 'var(--primary-color)';
+                    this.style.borderColor = 'var(--primary-color)';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    this.style.color = 'var(--text-light)';
+                    this.style.borderColor = 'var(--border-color)';
+                }
+            });
+        });
+        
+        // Pagination functionality
+        const pageItems = document.querySelectorAll('.page-item:not(.disabled)');
+        pageItems.forEach(item => {
+            item.addEventListener('click', function() {
+                if (!this.classList.contains('active')) {
+                    document.querySelector('.page-item.active').classList.remove('active');
+                    this.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

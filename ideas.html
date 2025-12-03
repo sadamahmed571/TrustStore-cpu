@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أفكار مشاريع — مجموعة الثقة التجارية</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	 <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ideas.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    
+
+     <!-- Ideas start -->
+         <!-- Ideas Hero Section -->
+    <section class="ideas-hero">
+        <div class="ideas-hero-content">
+            <h1>أفكار مشاريع عملية مبنية على منتجاتنا وخطوط الإنتاج 🚀</h1>
+            <p>تقدم هذه الصفحة أفكار مشاريع جاهزة وقابلة للتطبيق تعتمد على الآلات الصناعية المتوفرة في متجرنا. 💡</p>
+             
+        </div>
+    </section>
+      <!-- Filters Section -->
+    <section class="filters-section">
+         
+        <div class="filter-group">
+            <select class="filter-select" id="type-filter">
+                <option value="">حسب النوع</option>
+                <option value="production">إنتاجي</option>
+                <option value="small-industrial">صناعي صغير</option>
+                <option value="home">منزلي</option>
+                <option value="semi-auto">نصف آلي</option>
+                <option value="production-line">خط إنتاج</option>
+            </select>
+            <select class="filter-select" id="budget-filter">
+                <option value="">حسب الميزانية</option>
+                <option value="0-1000">0–1000$</option>
+                <option value="1000-5000">1000–5000$</option>
+                <option value="5000+">5000$+</option>
+            </select>
+            <select class="filter-select" id="machine-filter">
+                <option value="">حسب الآلة/المنتج</option>
+                <option value="plastic-granules">حبيبات بلاستيك</option>
+                <option value="packaging">تعبئة وتغليف</option>
+                <option value="presses">مكابس</option>
+                <option value="printing">ماكينات طباعة</option>
+            </select>
+            <div class="filter-search">
+                <input type="text" class="filter-input" id="search-input" placeholder="ابحث باسم المشروع أو نوع المنتج">
+                <button class="filter-search-btn" onclick="applyFilters()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideas Grid Section -->
+    <section class="ideas-grid-section" id="ideas-grid">
+        <div class="ideas-grid">
+            <!-- Idea Card 1 -->
+            <div class="idea-card" data-type="production" data-budget="5000+" data-machine="packaging">
+                <div class="title-desc-container">
+                    <h2 class="idea-card-title"><i class="fas fa-lightbulb"></i> مشروع تصنيع الأكواب الورقية</h2>
+                    <p class="idea-card-desc">مشروع إنتاج أكواب ورقية صديقة للبيئة للاستخدام اليومي. 🌿</p>
+                </div>
+                <div class="product-image-container">
+                    <img src="img/1.jpg" alt="ماكينة تشكيل أكواب ورقية" class="product-image">
+                    <span class="label-category">تعبئة وتغليف</span>
+                    <span class="label-serial">#001</span>
+					<a href="single-product.html?id=machine001" class="label-details"><i class="fas fa-exclamation-circle"></i>  تفاصيل</a>
+                </div>
+                <div class="budget-needs">
+                    <h3 class="budget-needs-title"><i class="fas fa-money-bill-wave"></i> ميزانية و احتياجات المشروع  </h3>
+                    <!-- Row 1: Needs Texts -->
+                    <div class="need-cost">5000$</div>
+                    <div class="need-cost">1000$</div>
+                    <div class="need-cost">1500$</div>
+                    <div class="need-cost">500$</div>
+                    <!-- Row 2: Icons -->
+                    <div class="timeline-icon">1</div>
+                    <div class="timeline-icon">2</div>
+                    <div class="timeline-icon">3</div>
+                    <div class="timeline-icon">4</div>
+                    <!-- Row 3: Costs -->
+                    <div class="need-text">ماكينة تشكيل أكواب ورقية</div>
+                    <div class="need-text">ورق خام</div>
+                    <div class="need-text">مساحة عمل 50 م²</div>
+                    <div class="need-text">كهرباء 220V</div>
+                </div>
+                <div class="machine-info">
+                    <span><i class="fas fa-cogs"></i> الآلة الرئيسية: ماكينة تشكيل (متوفرة في المتجر) - القدرة الإنتاجية: 5000 كوب/يوم ⚙️</span>
+                    
+                </div>
+                <div class="buttons-row">
+                    <a href="https://wa.me/905528000065?text=أريد أن أطلب فكرة مشروع تصنيع الأكواب الورقية + ماكينة تشكيل أكواب ورقية #001" class="action-btn"><i class="fas fa-shopping-cart"></i> اطلب</a>
+                    <a href="https://wa.me/905528000065?text=أريد أن أعرف أكثر عن فكرة مشروع تصنيع الأكواب الورقية + ماكينة تشكيل أكواب ورقية #001" class="action-btn"><i class="fas fa-question-circle"></i> استفسر</a>
+                </div>
+            </div>
+
+       <!-- Idea Card 1 -->
+            <div class="idea-card" data-type="production" data-budget="5000+" data-machine="packaging">
+                <div class="title-desc-container">
+                    <h2 class="idea-card-title"><i class="fas fa-lightbulb"></i> مشروع تصنيع الأكواب الورقية</h2>
+                    <p class="idea-card-desc">مشروع إنتاج أكواب ورقية صديقة للبيئة للاستخدام اليومي. 🌿</p>
+                </div>
+                <div class="product-image-container">
+                    <img src="img/1.jpg" alt="ماكينة تشكيل أكواب ورقية" class="product-image">
+                    <span class="label-category">تعبئة وتغليف</span>
+                    <span class="label-serial">#001</span>
+					<a href="single-product.html?id=machine001" class="label-details"><i class="fas fa-exclamation-circle"></i>  تفاصيل</a>
+                </div>
+                <div class="budget-needs">
+                    <h3 class="budget-needs-title"><i class="fas fa-money-bill-wave"></i> ميزانية و احتياجات المشروع  </h3>
+                    <!-- Row 1: Needs Texts -->
+                    <div class="need-cost">5000$</div>
+                    <div class="need-cost">1000$</div>
+                    <div class="need-cost">1500$</div>
+                    <div class="need-cost">500$</div>
+                    <!-- Row 2: Icons -->
+                    <div class="timeline-icon">1</div>
+                    <div class="timeline-icon">2</div>
+                    <div class="timeline-icon">3</div>
+                    <div class="timeline-icon">4</div>
+                    <!-- Row 3: Costs -->
+                    <div class="need-text">ماكينة تشكيل أكواب ورقية</div>
+                    <div class="need-text">ورق خام</div>
+                    <div class="need-text">مساحة عمل 50 م²</div>
+                    <div class="need-text">كهرباء 220V</div>
+                </div>
+                <div class="machine-info">
+                    <span><i class="fas fa-cogs"></i> الآلة الرئيسية: ماكينة تشكيل (متوفرة في المتجر) - القدرة الإنتاجية: 5000 كوب/يوم ⚙️</span>
+                    
+                </div>
+                <div class="buttons-row">
+                    <a href="https://wa.me/905528000065?text=أريد أن أطلب فكرة مشروع تصنيع الأكواب الورقية + ماكينة تشكيل أكواب ورقية #001" class="action-btn"><i class="fas fa-shopping-cart"></i> اطلب</a>
+                    <a href="https://wa.me/905528000065?text=أريد أن أعرف أكثر عن فكرة مشروع تصنيع الأكواب الورقية + ماكينة تشكيل أكواب ورقية #001" class="action-btn"><i class="fas fa-question-circle"></i> استفسر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- Ideas end -->
+	
+    
+    <!-- Request Form Modal -->
+    <div class="modal" id="request-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="form-title">طلب منتج أو خدمة</h2>
+            <form id="request-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">الاسم الكامل</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="product-type">نوع المنتج أو الخدمة</label>
+                    <select id="product-type" class="form-select" required>
+                        <option value="">اختر نوع المنتج أو الخدمة</option>
+                        <option value="machinery">الماكينات</option>
+                        <option value="production-lines">خطوط الإنتاج</option>
+                        <option value="modern-building">البناء الحديث</option>
+                        <option value="industrial-equipment">معدات صناعية</option>
+                        <option value="spare-parts">قطع الغيار</option>
+                        <option value="operating-supplies">مستلزمات التشغيل</option>
+                        <option value="technical-services">خدمات فنية</option>
+                        <option value="project-ideas">افكار مشاريع</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="details">تفاصيل الطلب</label>
+                    <textarea id="details" class="form-textarea" placeholder="يرجى وصف المنتج أو الخدمة المطلوبة بالتفصيل..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">إرسال الطلب</button>
+            </form>
+        </div>
+    </div>
+ <script src="js/ideas.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

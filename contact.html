@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا — مجموعة الثقة التجارية</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact.css">
+    
+    <style>
+
+    </style>
+</head>
+<body>
+    
+     
+    
+    
+<!-- Contact start -->
+<section class="vision-banner">
+        <h2 class="vision-title">شريككم الاستراتيجي للمشاريع الصناعية</h2>
+        <p class="vision-text">
+            نوفر حلولاً شاملة وموثوقة لدعم مشاريع البناء والإنتاج من مرحلة التأسيس حتى التشغيل. الجودة والدعم الفني هما التزامنا تجاهكم.
+        </p>
+    </section>
+
+    <!-- Contact Sections -->
+    <section class="contact-section">
+        <h2 class="section-title">تابعنا على وسائل التواصل الاجتماعي</h2>
+        <div class="social-grid">
+            <a href="https://facebook.com" target="_blank" class="social-btn facebook-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://instagram.com" target="_blank" class="social-btn instagram-btn"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://tiktok.com" target="_blank" class="social-btn tiktok-btn"><i class="fab fa-tiktok"></i> TikTok</a>
+            <a href="https://x.com" target="_blank" class="social-btn x-btn"><i class="fa-brands fa-x-twitter"></i>   (Twitter)</a>
+            <a href="https://wechat.com" target="_blank" class="social-btn wechat-btn"><i class="fab fa-weixin"></i> WeChat</a>
+            <a href="https://telegram.org" target="_blank" class="social-btn telegram-btn"><i class="fab fa-telegram-plane"></i> Telegram</a>
+        </div>
+    </section>
+
+    <section class="contact-section">
+         <h2 class="section-title">تواصل معنا مباشرة</h2>
+        <div class="contact-options">
+            <a href="tel:+905528000065" class="contact-btn phone-btn"><i class="fa-solid fa-phone"></i> اتصل بنا</a>
+            <a href="https://wa.me/905528000065?text=مرحبا%2C%20أود%20الاستفسار%20عن%20منتجاتكم" target="_blank" class="contact-btn whatsapp-btn"><i class="fab fa-whatsapp"></i> دردشة واتساب</a>
+            <a href="mailto:info@althiqagroup.com" class="contact-btn email-btn"><i class="fas fa-envelope"></i>  بريد إلكتروني</a>
+        </div>
+    </section>
+
+    <section class="contact-section">
+	   <h2 class="section-title">أرسل استفسارك</h2>
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="post" onsubmit="return validateForm()">
+            <input type="text" class="form-input" id="name" placeholder="اسمك الكريم" required>
+			<input type="tel" class="form-input" id="phone" placeholder="رقم هاتفك / واتس اب" required>
+            <input type="email" class="form-input" id="email" placeholder="بريدك الإلكتروني" >
+            <textarea class="form-input form-textarea" id="message" placeholder="رسالتك هنا..." required></textarea>
+            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+        </form>
+    </section>
+
+    <!-- Feedback Modal -->
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="feedback-content">
+            <div class="feedback-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="feedback-title">تم استلام رسالتك</h3>
+            <p class="feedback-message">
+                شكراً لتواصلك معنا! لقد تلقينا رسالتك بنجاح وسنعاود الرد عليك في أقرب وقت ممكن.
+            </p>
+            <button class="feedback-btn" onclick="closeFeedbackModal()">موافق</button>
+        </div>
+    </div>
+	
+
+    <section class="bottom-nav-section">
+        <div class="nav-buttons-container">
+            <a href="index.html" class="nav-main-btn primary">
+                <i class="fas fa-home"></i> العودة للرئيسية
+            </a>           
+        </div>
+    </section>
+	<!-- Contact end -->
+
+    <div class="modal" id="request-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="form-title">طلب منتج أو خدمة</h2>
+            <form id="request-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">الاسم الكامل</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="product-type">نوع الطلب</label>
+                    <select id="product-type" class="form-select" required>
+                        <option value="project-ideas">استفسار عن فكرة مشروع</option>
+                        <option value="machinery">الماكينات</option>
+                        <option value="technical-services">خدمات فنية</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="details">التفاصيل</label>
+                    <textarea id="details" class="form-textarea" placeholder="اكتب تفاصيل استفسارك هنا..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">إرسال الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // 1. Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            
+            if (isDarkMode) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+        
+        themeToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleDarkMode();
+        });
+        
+        // Initialize Theme
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+
+        // 2. Filter Functionality
+        function applyFilters() {
+            const typeValue = document.getElementById('type-filter').value.toLowerCase();
+            const budgetValue = document.getElementById('budget-filter').value;
+            const machineValue = document.getElementById('machine-filter').value.toLowerCase();
+            const searchText = document.getElementById('search-input').value.toLowerCase();
+            const cards = document.querySelectorAll('.idea-card');
+
+            cards.forEach(card => {
+                const cardType = card.getAttribute('data-type');
+                const cardBudget = card.getAttribute('data-budget');
+                const cardMachine = card.getAttribute('data-machine');
+                
+                // Get text content for search
+                const title = card.querySelector('.idea-card-title').innerText.toLowerCase();
+                const desc = card.querySelector('.idea-card-desc').innerText.toLowerCase();
+                const content = title + " " + desc;
+
+                const typeMatch = (typeValue === "") || (cardType === typeValue);
+                const budgetMatch = (budgetValue === "") || (cardBudget === budgetValue);
+                const machineMatch = (machineValue === "") || (cardMachine === machineValue);
+                const searchMatch = (searchText === "") || (content.includes(searchText));
+
+                if (typeMatch && budgetMatch && machineMatch && searchMatch) {
+                    card.style.display = "flex";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+        
+        // Trigger search on Enter key
+        document.getElementById('search-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') applyFilters();
+        });
+
+        // 3. Modal Logic
+        const requestModal = document.getElementById('request-modal');
+        const requestBtnTriggers = document.querySelectorAll('.request-btn-trigger');
+        const closeModal = document.querySelector('.close-modal');
+        const requestForm = document.getElementById('request-form');
+        
+        requestBtnTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                requestModal.style.display = 'flex';
+            });
+        });
+        
+        closeModal.addEventListener('click', () => {
+            requestModal.style.display = 'none';
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === requestModal) {
+                requestModal.style.display = 'none';
+            }
+        });
+        
+        requestForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('تم استلام طلبك بنجاح! سنتواصل معك قريباً.');
+            requestModal.style.display = 'none';
+            requestForm.reset();
+        });
+
+        // 4. Contact Form Validation and Feedback
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            if (name.trim() === '' || phone.trim() === '' || message.trim() === '') {
+                alert('يرجى ملء جميع الحقول المطلوبة');
+                return false;
+            }
+            
+            // Simple phone validation
+            const phoneRegex = /^[0-9+\-\s()]{10,}$/;
+            if (!phoneRegex.test(phone)) {
+                alert('يرجى إدخال رقم هاتف صحيح');
+                return false;
+            }
+            
+            // Show feedback modal
+            document.getElementById('feedbackModal').style.display = 'flex';
+            
+            // Prevent actual form submission for demo
+            return false;
+        }
+        
+        function closeFeedbackModal() {
+            document.getElementById('feedbackModal').style.display = 'none';
+            document.querySelector('.contact-form').reset();
+        }
+    </script>
+</body>
+</html>
